@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-29T11:44:57 IST" name="Default suite" finished-at="2025-12-29T11:45:05 IST" duration-ms="7982">
+  <suite started-at="2025-12-30T13:02:24 IST" name="Default suite" finished-at="2025-12-30T13:02:43 IST" duration-ms="19438">
     <groups>
     </groups>
-    <test started-at="2025-12-29T11:44:57 IST" name="Default test" finished-at="2025-12-29T11:45:05 IST" duration-ms="7982">
+    <test started-at="2025-12-30T13:02:24 IST" name="Default test" finished-at="2025-12-30T13:02:43 IST" duration-ms="19438">
       <class name="testcases.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@217ed35e]" started-at="2025-12-29T11:44:57 IST" name="setup" finished-at="2025-12-29T11:45:00 IST" duration-ms="2683" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@217ed35e]" started-at="2025-12-30T13:02:24 IST" name="setup" finished-at="2025-12-30T13:02:34 IST" duration-ms="10461" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="objinit()[pri:0, instance:testcases.LoginTest@217ed35e]" started-at="2025-12-29T11:45:00 IST" name="objinit" finished-at="2025-12-29T11:45:00 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="objinit()[pri:0, instance:testcases.LoginTest@217ed35e]" started-at="2025-12-30T13:02:35 IST" name="objinit" finished-at="2025-12-30T13:02:35 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- objinit -->
-        <test-method signature="tc001_Login()[pri:0, instance:testcases.LoginTest@217ed35e]" started-at="2025-12-29T11:45:00 IST" name="tc001_Login" finished-at="2025-12-29T11:45:01 IST" duration-ms="1438" status="PASS">
+        <test-method signature="tc001_Login()[pri:0, instance:testcases.LoginTest@217ed35e]" started-at="2025-12-30T13:02:35 IST" name="tc001_Login" finished-at="2025-12-30T13:02:36 IST" duration-ms="1971" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc001_Login -->
-        <test-method signature="tc002_Dashboard()[pri:0, instance:testcases.LoginTest@217ed35e]" started-at="2025-12-29T11:45:01 IST" name="tc002_Dashboard" finished-at="2025-12-29T11:45:03 IST" duration-ms="1762" status="PASS">
+        <test-method signature="tc002_Dashboard()[pri:0, instance:testcases.LoginTest@217ed35e]" started-at="2025-12-30T13:02:36 IST" name="tc002_Dashboard" finished-at="2025-12-30T13:02:41 IST" duration-ms="4527" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc002_Dashboard -->
-        <test-method signature="tc003_Mentor()[pri:0, instance:testcases.LoginTest@217ed35e]" started-at="2025-12-29T11:45:03 IST" name="tc003_Mentor" finished-at="2025-12-29T11:45:05 IST" duration-ms="1933" status="FAIL">
+        <test-method signature="tc003_Mentor()[pri:0, instance:testcases.LoginTest@217ed35e]" started-at="2025-12-30T13:02:41 IST" name="tc003_Mentor" finished-at="2025-12-30T13:02:43 IST" duration-ms="2303" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[element click intercepted: Element <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-1ujsas3" tabindex="0" type="button">...</button> is not clickable at point (1028, 526). Other element would receive the click: <div class="MuiAutocomplete-noOptions css-t0bixx" role="presentation">...</div>
@@ -31,10 +31,10 @@
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [835b6b9bb633e65efcb743bc4b9c1f63, clickElement {id=f.95D8E56E30144560822E3F2C7424615F.d.ADA06F6CE88DDD0A8CF34B3E61F90C9F.e.39}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52436}, goog:processID: 19216, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52436/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (835b6b9bb633e65efcb743bc4b9c1f63)] -> xpath: //button[text()='Add']]
-Session ID: 835b6b9bb633e65efcb743bc4b9c1f63]]>
+Command: [90c0c1421b1b9f1b1125c43893f4160d, clickElement {id=f.C60276F7D91AE3ED063B318A9507BAE8.d.D24B6563EC8FFEEDA5A59289A5715267.e.41}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53003}, goog:processID: 21580, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53003/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (90c0c1421b1b9f1b1125c43893f4160d)] -> xpath: //button[text()='Add']]
+Session ID: 90c0c1421b1b9f1b1125c43893f4160d]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-1ujsas3" tabindex="0" type="button">...</button> is not clickable at point (1028, 526). Other element would receive the click: <div class="MuiAutocomplete-noOptions css-t0bixx" role="presentation">...</div>
@@ -42,10 +42,10 @@ Session ID: 835b6b9bb633e65efcb743bc4b9c1f63]]>
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [835b6b9bb633e65efcb743bc4b9c1f63, clickElement {id=f.95D8E56E30144560822E3F2C7424615F.d.ADA06F6CE88DDD0A8CF34B3E61F90C9F.e.39}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52436}, goog:processID: 19216, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52436/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (835b6b9bb633e65efcb743bc4b9c1f63)] -> xpath: //button[text()='Add']]
-Session ID: 835b6b9bb633e65efcb743bc4b9c1f63
+Command: [90c0c1421b1b9f1b1125c43893f4160d, clickElement {id=f.C60276F7D91AE3ED063B318A9507BAE8.d.D24B6563EC8FFEEDA5A59289A5715267.e.41}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53003}, goog:processID: 21580, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53003/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (90c0c1421b1b9f1b1125c43893f4160d)] -> xpath: //button[text()='Add']]
+Session ID: 90c0c1421b1b9f1b1125c43893f4160d
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -92,7 +92,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc003_Mentor -->
-        <test-method signature="tc004_Logout()[pri:0, instance:testcases.LoginTest@217ed35e]" started-at="2025-12-29T11:45:05 IST" name="tc004_Logout" finished-at="2025-12-29T11:45:05 IST" duration-ms="107" status="PASS">
+        <test-method signature="tc004_Logout()[pri:0, instance:testcases.LoginTest@217ed35e]" started-at="2025-12-30T13:02:43 IST" name="tc004_Logout" finished-at="2025-12-30T13:02:43 IST" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc004_Logout -->

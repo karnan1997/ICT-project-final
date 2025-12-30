@@ -25,8 +25,8 @@ public class LoginPage {
     }
     
     public void e_mail(String em) {
-    	WebElement emaiL = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='email']")));
-    	emaiL.sendKeys(em);
+    	WebElement email = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='email']")));
+    	email.sendKeys(em);
     }
     public void pass(String pas) {
     	WebElement passw=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='password']")));
