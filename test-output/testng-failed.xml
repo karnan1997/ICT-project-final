@@ -5,8 +5,8 @@
     <classes>
       <class name="testcases.LoginTest">
         <methods>
-          <include name="objinit"/>
           <include name="tearDown"/>
+          <include name="objinit"/>
           <include name="setup"/>
           <include name="tc003_Mentor"/>
         </methods>

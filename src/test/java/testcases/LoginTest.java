@@ -1,11 +1,9 @@
 package testcases;
 
 import base.TestBase;
-
 import java.io.IOException;
-
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import pages.DashBoard;
@@ -15,38 +13,39 @@ import pages.Mentor;
 import utility.ExcelUtility;
 
 public class LoginTest extends TestBase {
-	LoginPage lg;
-	DashBoard dsh;
-	Mentor ment;
-	Logout lgt;
-	
-	@BeforeClass
-	public void objinit() {
-		lg = new LoginPage(driver);
-		dsh=new DashBoard(driver);
-		ment=new Mentor(driver);
-		lgt=new Logout(driver); 
-	}
 
-    @Test(priority=1)
+    LoginPage lg;
+    DashBoard dsh;
+    Mentor ment;
+    Logout lgt;
+
+    @BeforeMethod
+    public void objinit() {
+        lg = new LoginPage(driver);   // driver is READY
+        dsh = new DashBoard(driver);
+        ment = new Mentor(driver);
+        lgt = new Logout(driver);
+    }
+
+    @Test(priority = 1)
     public void tc001_Login() throws IOException {
-
-    	Assert.assertTrue(lg.clkLogin(),"Login button not visible");
+        Assert.assertTrue(lg.clkLogin(), "Login button not visible");
         lg.clickLogin();
         lg.e_mail(ExcelUtility.readExcel(0, 0));
         lg.pass(ExcelUtility.readExcel(0, 1));
         lg.log();
-        
     }
-    @Test(priority=2)
+
+    @Test(priority = 2)
     public void tc002_Dashboard() {
-    	dsh.clickDash();
-    	dsh.addproject();
-    	dsh.addTopic("NewTopic");
-    	dsh.addBottom("20");
-    	dsh.clickadd();
+        dsh.clickDash();
+        dsh.addproject();
+        dsh.addTopic("NewTopic");
+        dsh.addBottom("20");
+        dsh.clickadd();
     }
-    @Test(priority=3)
+
+    @Test(priority = 3)
     public void tc003_Mentor() {
         ment.clkMentor();
         ment.addMentor();
@@ -57,11 +56,9 @@ public class LoginTest extends TestBase {
         ment.mntrProject("ICT");
         ment.mntrAdd();
     }
-    @Test(priority=4)
+
+    @Test(priority = 4)
     public void tc004_Logout() {
-    	lgt.clickLogout();
+        lgt.clickLogout();
     }
 }
-
-
-
