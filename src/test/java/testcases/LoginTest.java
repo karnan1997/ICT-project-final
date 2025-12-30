@@ -28,7 +28,7 @@ public class LoginTest extends TestBase {
 		lgt=new Logout(driver); 
 	}
 
-    @Test
+    @Test(priority=1)
     public void tc001_Login() throws IOException {
 
     	Assert.assertTrue(lg.clkLogin(),"Login button not visible");
@@ -38,7 +38,7 @@ public class LoginTest extends TestBase {
         lg.log();
         
     }
-    @Test 
+    @Test(priority=2)
     public void tc002_Dashboard() {
     	dsh.clickDash();
     	dsh.addproject();
@@ -46,7 +46,7 @@ public class LoginTest extends TestBase {
     	dsh.addBottom("20");
     	dsh.clickadd();
     }
-    @Test
+    @Test(priority=3)
     public void tc003_Mentor() {
         ment.clkMentor();
         ment.addMentor();
@@ -57,7 +57,7 @@ public class LoginTest extends TestBase {
         ment.mntrProject("ICT");
         ment.mntrAdd();
     }
-    @Test
+    @Test(priority=4)
     public void tc004_Logout() {
     	lgt.clickLogout();
     }
