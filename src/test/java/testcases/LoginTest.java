@@ -37,7 +37,12 @@ public class LoginTest extends TestBase {
     }
 
     @Test(priority = 2)
-    public void tc002_Dashboard() {
+    public void tc002_Dashboard() throws IOException {
+    	lg.clickLogin();
+        lg.e_mail(ExcelUtility.readExcel(0, 0));
+        lg.pass(ExcelUtility.readExcel(0, 1));
+        lg.log();
+
         dsh.clickDash();
         dsh.addproject();
         dsh.addTopic("NewTopic");
@@ -46,7 +51,12 @@ public class LoginTest extends TestBase {
     }
 
     @Test(priority = 3)
-    public void tc003_Mentor() {
+    public void tc003_Mentor() throws IOException {
+    	lg.clickLogin();
+        lg.e_mail(ExcelUtility.readExcel(0, 0));
+        lg.pass(ExcelUtility.readExcel(0, 1));
+        lg.log();
+
         ment.clkMentor();
         ment.addMentor();
         ment.mntrName("karnan");
@@ -58,7 +68,13 @@ public class LoginTest extends TestBase {
     }
 
     @Test(priority = 4)
-    public void tc004_Logout() {
+   
+    public void tc004_Logout() throws IOException {
+    	lg.clickLogin();
+        lg.e_mail(ExcelUtility.readExcel(0, 0));
+        lg.pass(ExcelUtility.readExcel(0, 1));
+        lg.log();
+
         lgt.clickLogout();
     }
 }
