@@ -2,6 +2,7 @@ package base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import java.time.Duration;
@@ -19,9 +20,9 @@ public class TestBase {
         driver.get("https://ictak-internship-portal-client.vercel.app/");
     }
 
-//    @AfterTest
-//    public void tearDown() {
-//       driver.quit(); 
-//  }
+    @AfterTest
+    public void tearDown() {
+       driver.quit(); 
+  }
 }
 
